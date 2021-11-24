@@ -34,6 +34,7 @@ body {
 
 .page-header {
   background: var(--primary-button-white-color);
+  border-bottom: 1px solid #eeeeee;
 }
 .main-nav {
   display: flex;
@@ -201,7 +202,11 @@ body {
 .section-list-title .image + .image {
   margin-left: 30px;
 }
-
+.section-list-title .image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /*Наша команда*/
 
 .section-subtitle {
@@ -309,17 +314,22 @@ body {
 }
 .portfolio-name {
   padding: 0px;
-  margin: 20px auto 4px auto;
+  margin: 0px auto 4px auto;
   font-size: 18px;
   line-height: 2;
   color: var(--title-text-color);
 }
 .portfolio-text {
   padding: 0px;
-  margin: 0px auto 20px auto;
+  margin: 0px;
   font-weight: 400;
   line-height: 1.87;
   color: var(--primary-text-color);
+}
+.content-info {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 14px 24px 26px 24px;
 }
 
 /*Футер*/
