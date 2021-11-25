@@ -36,18 +36,25 @@ body {
   background: var(--primary-button-white-color);
   border-bottom: 1px solid #eeeeee;
 }
+.main-info {
+  display: flex;
+}
 .main-nav {
   display: flex;
   align-items: center;
 }
 .section-list-nav {
   margin: 0px 0px 0px 93px;
+  padding: 0px;
+}
+.section-list-box {
+  margin: 0px 0px 0px auto;
+  padding: 0px;
 }
 .section-list-nav,
 .section-list-box {
   display: flex;
   list-style: none;
-  padding-left: 0;
 }
 .logo {
   font-family: Raleway;
@@ -76,13 +83,6 @@ body {
 .section-list {
   list-style: none;
 }
-.link-box {
-  margin-left: auto;
-  list-style: none;
-}
-.section-list-box {
-  margin: 0px;
-}
 .auth-nav {
   color: var(--primary-text-color);
 }
@@ -104,7 +104,6 @@ body {
 /*Шапка*/
 .section-header {
   background-color: var(--title-bgn-color);
-  margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -136,45 +135,14 @@ body {
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
+  border: 0px;
 }
 
 /*Особенности*/
 
 .section-title {
-  margin-top: 0px;
-}
-
-.section-list-text {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0px 0px 94px 0px;
-}
-.container .list {
-  padding: 0px auto;
-  margin: 0px 0px 94px 0px;
-}
-.section-item {
-  font-weight: 700;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--title-text-color);
-}
-.section-text {
-  margin: 0px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-}
-.list {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-text-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .list-title {
   font-size: 36px;
@@ -193,6 +161,45 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.section-list-text {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.text {
+  width: 270px;
+  justify-content: space-evenly;
+}
+.section-item {
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
+.section-text {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/*Чем мы занимаемся*/
+
+.section-list {
+  padding-bottom: 94px;
+}
+.list {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
 .section-list-title {
   margin: 0px;
   padding: 0px;
@@ -207,14 +214,17 @@ body {
   max-width: 100%;
   height: auto;
 }
+
 /*Наша команда*/
 
 .section-subtitle {
   background-color: var(--button-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .list-text {
   margin: 0px;
-  padding: 94px 0px 50px 0px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -252,19 +262,20 @@ body {
   display: flex;
   list-style: none;
   margin: 0px;
-  padding: 0px 0px 94px 0px;
+  padding: 0px;
 }
 
 /*Портфолио*/
 
 .section-button {
   background: var(--primary-button-white-color);
-  margin: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-list-button {
   padding: 0px;
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
   justify-content: center;
   display: flex;
   list-style: none;
@@ -282,6 +293,7 @@ body {
   background-color: var(--button-color);
   padding: 6px 22px;
   border-radius: 4px;
+  border: 0px;
 }
 .button-primary:focus,
 .button-primary:hover {
@@ -335,25 +347,15 @@ body {
 /*Футер*/
 
 .page-footer {
-  position: absolute;
-  width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--title-bgn-color);
 }
 .container .footer {
   justify-content: flex-start;
 }
-.logo-title {
-  padding-bottom: 20px;
-  padding-top: 60px;
-}
-.address-title {
-  margin: 0px;
-}
 .footer-item {
   padding-bottom: 9px;
-}
-.footer-item:nth-child(3n) {
-  padding-bottom: 60px;
 }
 .logo-link {
   color: var(--primary-button-white-color);
@@ -364,7 +366,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   list-style: none;
-  margin: 0px;
+  margin: 20px 0px 0px 0px;
   padding: 0px;
 }
 .link {
