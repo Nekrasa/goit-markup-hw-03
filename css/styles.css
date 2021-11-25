@@ -29,6 +29,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /*Заголовок*/
 
@@ -209,11 +214,6 @@ body {
 .section-list-title .image + .image {
   margin-left: 30px;
 }
-.section-list-title .image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 
 /*Наша команда*/
 
@@ -275,7 +275,7 @@ body {
 .section-list-button {
   padding: 0px;
   margin-top: 0px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
   display: flex;
   list-style: none;
@@ -355,7 +355,10 @@ body {
   justify-content: flex-start;
 }
 .footer-item {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
+}
+.footer-item:nth-child(3n) {
+  margin-bottom: 0px;
 }
 .logo-link {
   color: var(--primary-button-white-color);
